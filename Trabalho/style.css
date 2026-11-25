@@ -1,0 +1,359 @@
+body{
+    background-color: #081020;
+    margin: 0;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*MENU DO SITE*/
+
+header{
+    padding: 20px;
+    margin-top: 15px;
+}
+.blocos{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(to left, #1E293B);
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+}
+.bloco1{
+    margin: 0;
+    position: relative;
+    padding: 10px;
+    width: 100px;
+    background-color: #1c71fa;
+    border-radius: 5px;
+}
+.bloco2{
+    margin: 0;
+    position: relative;
+    padding: 10px;
+    width: 100px;
+    background-color: #3e87fc;
+    border-radius: 5px;
+}
+.bloco3{
+    margin: 0;
+    position: relative;
+    padding: 10px;
+    width: 100px;
+    background-color: #77aafc;
+    border-radius: 5px;
+}
+.bloco4{
+    margin: 0;
+    position: relative;
+    padding: 10px;
+    width: 500px;
+    background-color: #cadfff;
+    border-radius: 5px;
+}
+
+.cabeca{
+    background-image: linear-gradient(to left, #1E293B);
+    padding: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cabeca img{
+    width: 60px;
+}
+.cabeca a{
+    color: #fffbf6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    gap: 5px;
+    padding: 0px;
+}
+.menu li{
+    margin-top: -10px;
+    flex: 1px;
+}
+.menu a{
+    display: flex;
+    text-decoration: none;
+    border-radius: 9px;
+    color: #a9cdff;
+    background-color: #1E293B;
+    padding: 16px;
+    transition: 0.4s ease;
+}
+.menu a:hover{
+    background-color: #3882F6;
+    color: #fffbf6;
+}
+
+/*CONTEÚDO DO SITE*/
+
+.barra-de-pesquisa{
+    text-align: center;
+    padding: 10px;
+
+}
+.barra{
+    border: 10px;
+    padding: 16px;
+    border-radius: 30px;
+    width: 500px;
+    box-shadow: #3881f688 0 0 20px;
+    outline-color: #3882F6;
+}
+input::placeholder{
+    text-align: center;  
+    color: #081020;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner-conteudo{
+    margin: 20px 16px;
+    width: 100%;
+    height: 360px;
+    border-radius: 60px;
+    background-image: url(Imagens/eafc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f6f7f8;
+    text-shadow: 0 0 20px #7eafffbb;
+}
+.banner-conteudo h1{
+    margin-top: 0px;
+    padding: 50px;
+    font-size: 50px;
+}
+.banner-conteudo p{
+    margin-top: -120px;
+    padding: 50px;
+}
+.banner-conteudo a{
+    background-color: #064ec4a1;
+    padding: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-left: 45px;
+    color: #f3f3f3;
+    box-shadow: #064fc47a 0px 0px 20px;
+    transition: 0.4s;
+}
+.banner-conteudo a:hover{
+    background-color: #8ab7ffa1;
+    box-shadow: #9ec3ff8a 0px 0px 20px;
+}
+
+#h2-1{
+    margin-top: 30px;
+    margin-left: 50px;
+    padding: 16px;
+    color: #3882F6;
+}
+
+.caixas{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.caixa img{
+    width: 100%;
+    border-radius: 8px;
+}
+hr{
+    background-color: #3882F6;
+    height: 2px;
+    border: none;
+}
+.caixa{
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #1b2b46;
+    color: #f3f3f3;
+    border: 2px solid transparent;
+    transition: 1s;
+}
+.caixa:hover{
+    transform: translateY(-20px);
+    border: solid #3882F6;
+    box-shadow: 0px 10px 20px #00338556;
+}
+.compra{
+    display: flex;
+    justify-content: space-between;
+}
+.compra button{
+    border-radius: 9px;
+    border: none;
+    color: #f3f3f3;
+    background-color: #3882F6;
+    width: 100px;
+    transition: 0.3s;
+}
+.compra button:active{
+    background-color: #f3f3f3;
+    color: #111927;
+    box-shadow: #f3f3f3 0 0 20px;
+}
+.compra button:hover{
+    transform: scale(1.1);
+}
+.compra > p{
+    color: #3882F6;
+    font-weight: bold;
+}
+footer{
+    margin: 0;
+    margin-top: 50px;
+    background-color: #3882F6;
+    color: #f3f3f3;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+
+}
+footer img{
+    width: 50px;
+}
+.direitos{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.redes img{
+    width: 30px;
+}
+
+/*PÁGINA DE CONTATO*/
+
+.inicio-contato{
+    color: #f3f3f3;
+    text-align: center;
+}
+.formulario{
+    display: block;
+    color: #f3f3f3;
+    padding: 50px;
+    border-radius: 30px;
+    border: solid #1b2b46;
+    background-color: #111927;
+    margin: auto;
+    width: 800px;
+}
+#nome{
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 9px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+#email{
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 9px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline: none;
+}
+#telefone{
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 9px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline: none;
+}
+#assunto{
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 9px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    outline: none;
+}
+#mensagem{
+    background-color: #f3f3f3;
+    padding: 6px;
+    border-radius: 9px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline: none;
+}
+.formulario-botao{
+    text-align: end;
+    
+}
+.fbotao{
+    padding: 15px;
+    color: #111927;
+    width: 100;
+    border-radius: 9px;
+    background-color: #77aafc;
+    border: none;
+    transition: 0.3s;
+}
+.fbotao:hover{
+    background-color: #e0e9f8;
+}
+.fbotao:active{
+    background-color: #77aafc;
+}
+
+/*PÁGINA SOBRE*/
+
+.sobre-o-site{
+    color: #f3f3f3;
+    padding: 0 30px;
+}
+.sobre-o-site > h1{
+    color: #77aafc;
+}
+.sobre1{
+    background-color: #111927;
+    padding: 30px;
+    border-radius: 10px;
+    border: solid #1b2b46;
+    text-align: center;
+}
+.sobre1 > h2{
+    color: #77aafc;
+}
+.sobre-o-site2{
+    color: #f3f3f3;
+    margin-top: 10px;
+    padding: 0 30px;
+    display: flex;
+    gap: 10px;
+}
+.sobre2 > h2{
+    color: #77aafc;
+}
+.sobre2{
+    background-color: #111927;
+    padding: 30px;
+    border-radius: 10px;
+    border: solid #1b2b46;
+}
