@@ -176,57 +176,64 @@ input::placeholder{
     width: 100%;
     border-radius: 8px;
 }
-hr{
-    background-color: #3882F6;
-    height: 2px;
-    border: none;
-}
+
 .caixa{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 20px;
+    padding: 16px;
     border-radius: 15px;
     background-color: #1b2b46;
     color: #f3f3f3;
     border: 2px solid transparent;
-    flex: 1;
-    transition: 1s;
+    transition: 0.25s ease;
 }
+
+.caixa:hover{
+    transform: translateY(-6px);
+    border-color: #3882F6;
+    box-shadow: 0 10px 20px rgba(0, 51, 133, 0.35);
+}
+
 .caixa img{
     width: 100%;
-    display: block;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
 }
-.caixa:hover{
-    transform: translateY(-20px);
-    border: solid #3882F6;
-    box-shadow: 0px 10px 20px #00338556;
+
+.caixa h3{
+    margin: 14px 0 12px;
+    font-size: 1.05rem;
 }
+
 .compra{
+    margin-top: auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    font-size: small;
-    
+    gap: 10px;
 }
+
 .compra button{
     border-radius: 9px;
     border: none;
     color: #f3f3f3;
     background-color: #3882F6;
-    width: 100px;
-    transition: 0.3s;
-}
-.compra button:active{
-    background-color: #f3f3f3;
-    color: #111927;
-    box-shadow: #f3f3f3 0 0 20px;
-}
-.compra button:hover{
-    transform: scale(1.1);
-}
-.compra > p{
-    color: #3882F6;
+    padding: 10px 16px;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.compra button:hover{
+    background-color: #2563eb;
+    transform: scale(1.03);
+}
+
+.compra > p{
+    margin: 0;
+    color: #77aafc;
+    font-weight: bold;
+    font-size: 0.95rem;
 }
 footer{
     margin: 0;
@@ -389,6 +396,7 @@ footer img{
         gap: 2px;
         background: none;
         border: none;
+        cursor: pointer;
         z-index: 1001;
     }
     .botao-abrir span{
@@ -397,7 +405,7 @@ footer img{
         height: 3px;
         padding: 2px;
         border-radius: 2px;
-        cursor: pointer;
+
     }
     .logo a{
         font-size: 25px;
@@ -444,6 +452,9 @@ footer img{
         justify-content:center;
         width: 15.7rem;
     }
+    .caixa{
+        padding: 10px;
+    }
     .caixas{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -456,10 +467,5 @@ footer img{
         margin-left: 0;
         padding: 0;
     }
-    .compra p{
-        font-size: small;
-    }
-    .compra button{
-        width: 80px;
-    }
+    
 }
