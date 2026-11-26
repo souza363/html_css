@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>BooByte</title>
 </head>
 <body>
@@ -24,21 +25,26 @@ para fins estéticos-->
 <!--Cabeçalho do site-->
 
         <div class="cabeca">
-            <a href="index.html"><img src="Imagens/logo.png" alt="Logotipo" width="80px"></a>
-            <a href="index.html">BooByte</a>
+            <div class="logo">
+                <a href="index.html"><img src="Imagens/logo.png" alt="Logotipo" width="80px"></a>
+                <a id="boo" href="index.html">BooByte</a>
+            </div>
+            <button class="botao-abrir">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
 
 <!--Menu de navegação-->
-
-        <nav>
-            <div>
-                <ul class="menu">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="jogos.html">Jogos</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
+        
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
         </nav>
 
     </header>
